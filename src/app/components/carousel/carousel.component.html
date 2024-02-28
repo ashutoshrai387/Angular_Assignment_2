@@ -1,0 +1,12 @@
+<h1>Angular Carousel</h1>
+<section>
+<div class="carousel">
+  <div class="arrow left" (click)="prevSlide()">&#10094;</div>
+  <div class="slide" *ngFor="let slide of (slides$ | async); let i = index; trackBy: trackByFn" [style.display]="i === currentSlideIndex ? 'block' : 'none'">
+    <img [src]="slide.imageUrl" alt="{{slide.caption}}">
+    <p class="caption">{{slide.caption}}</p>
+  </div>
+  <div class="arrow right" (click)="nextSlide()">&#10095;</div>
+</div>
+</section>
+
