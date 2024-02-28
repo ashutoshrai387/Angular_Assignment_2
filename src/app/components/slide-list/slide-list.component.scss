@@ -1,17 +1,19 @@
 section {
     padding: 20px 20px;
   }
-
+  
+  /* list styling */
 .slide-list {
     ul {
-        li {
-            padding: 5px;
+      li {
+        padding: 5px;
+  
+            button {
+                margin-left: 10px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
         }
+      }
     }
-}
-
-button {
-    margin-left:10px;
-    border: none;
-    background-color: transparent;
-}
+}  

@@ -2,6 +2,7 @@
   <h2>Added Slides</h2>
   <div class="slide-list">
     <ul>
+      <!-- loop to display each slide -->
       <li *ngFor="let slide of (slides$ | async); let i = index">
         <span>Slide - {{i+1}}</span>
         <button (click)="deleteSlide(i)"><i class="fa-solid fa-trash-can"></i></button>

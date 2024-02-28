@@ -1,10 +1,12 @@
 <section>
   <h2>Add new slide</h2>
+  <!-- form to add new slide -->
   <form class="addSlideForm" (ngSubmit)="addSlide()">
     <label for="imageUrl">Image url</label>
     <input type="text" id="imageUrl" placeholder="Image url" [(ngModel)]="newSlide.imageUrl" name="imageUrl" required>
     <label for="caption">Slide caption</label>
     <input type="text" id="caption" placeholder="Caption" [(ngModel)]="newSlide.caption" name="caption" required>
+    <!-- add slide button (disabled if imageUrl or caption is empty) -->
     <button type="submit" class="btn" [disabled]="!newSlide.imageUrl || !newSlide.caption">Add slide</button>
   </form>
 </section>
