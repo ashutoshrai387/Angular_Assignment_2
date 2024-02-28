@@ -1,7 +1,7 @@
-/* carousel.component.scss */
 h1 {
   padding: 0 40px;
 }
+
 .carousel {
   position: relative;
   display: flex;
@@ -10,10 +10,7 @@ h1 {
   width: 100%;
   height: 500px;
   overflow: hidden;
-}
-
-img {
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .slide {
@@ -27,7 +24,7 @@ img {
   cursor: pointer;
   font-weight: bolder;
   font-size: 30px;
-  color: #888888;
+  color: #d1d1d1b6;
   padding: 20px;
   z-index: 1;
 }
@@ -51,4 +48,26 @@ img {
 
 section {
   padding: 0 40px;
+}
+
+.bars {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  width: 40px;
+  height: 4px;
+  background-color: #ccccccd0;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.bar.active {
+  background-color: #fff;
 }

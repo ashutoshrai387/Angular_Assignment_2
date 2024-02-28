@@ -1,4 +1,3 @@
-// slide-form.component.ts
 import { Component } from '@angular/core';
 import { Slide, CarouselService } from '../../services/carousel.service';
 

@@ -38,4 +38,8 @@ export class CarouselComponent implements OnInit {
     const slides = this.carouselService.getSlidesArray();
     this.currentSlideIndex = (this.currentSlideIndex - 1 + slides.length) % slides.length;
   }
+
+  goToSlide(index: number) {
+    this.currentSlideIndex = index;
+  }
 }
